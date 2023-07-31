@@ -1,0 +1,143 @@
+<?php
+class PlanesModel
+{
+    public $enlace;
+    public function __construct()
+    {
+        $this->enlace = new MySqlConnect();
+    }
+    /*Listar */
+    public function all(){
+        try {
+            //Consulta sql
+			$vSql = "SELECT * FROM planes;";
+			
+            //Ejecutar la consulta
+			$vResultado = $this->enlace->ExecuteSQL ($vSql);
+				
+			// Retornar el objeto
+			return $vResultado;
+		} catch ( Exception $e ) {
+			die ( $e->getMessage () );
+		}
+    }
+    /*Obtener */
+    // public function get($id)
+    // {
+    //     try {
+    //         //Consulta sql
+	// 		$vSql = "SELECT * FROM planes where id=$id";
+			
+    //         //Ejecutar la consulta
+	// 		$vResultado = $this->enlace->ExecuteSQL ( $vSql);
+	// 		// Retornar el objeto
+	// 		return $vResultado;
+	// 	} catch ( Exception $e ) {
+	// 		die ( $e->getMessage () );
+	// 	}
+    // }
+ 
+
+
+    public function get($id)
+    {
+        try {
+            $servicios=new ServiciosModel();
+            //Consulta sql
+			$vSql = "SELECT * FROM planes where id=$id";
+			
+            //Ejecutar la consulta
+			$vResultado = $this->enlace->ExecuteSQL ( $vSql);
+            $vResultado=$vResultado[0];
+            //listar los servicios por el plan
+            $ServiciosPlan=$servicios->getByPlan($id);
+            if(!empty($ServiciosPlan)){
+                $ServiciosPlan = array_column($ServiciosPlan, 'nombre');
+            }else{
+               $ServiciosPlan=[]; 
+            }
+			// Retornar el objeto
+            $vResultado->servicios=$ServiciosPlan;
+			return $vResultado;
+		} catch ( Exception $e ) {
+			die ( $e->getMessage () );
+		}
+    }
+
+
+    public function create($objeto) {
+        try {
+           // Obtener datos del objeto JSON para la tabla planes
+           $nombre = $objeto->nombre;
+           $descripcion = $objeto->descripcion;
+           $precio = $objeto->precio;
+
+           // Consulta SQL para INSERT en la tabla planes
+           $vSql = "INSERT INTO planes (nombre, descripcion, precio) VALUES ('$nombre', '$descripcion', $precio)";
+
+           // Ejecutar la consulta y obtener el ID del último plan insertado
+           $lastInsertedPlanID = $this->enlace->executeSQL_DML_last($vSql);
+
+           // Verificar si hay servicios asociados al plan y realizar la inserción en la tabla planes_servicios
+           if (is_array($objeto->servicios)) {
+               // Consulta SQL para INSERT en la tabla planes_servicios
+               $vSqlServicios = "INSERT INTO planes_servicios (plan_id, servicio_id) VALUES ";
+
+               // Recorrer el array de servicios y construir los valores para la inserción
+               $values = [];
+               foreach ($objeto->servicios as $servicio_id) {
+                   $values[] = "($lastInsertedPlanID, $servicio_id)";
+               }
+
+               $vSqlServicios .= implode(",", $values);
+
+               // Ejecutar la consulta para insertar los registros en planes_servicios
+               $this->enlace->ExecuteSQL($vSqlServicios);
+           }
+			// Retornar el objeto creado
+            return $this->get($vResultado);
+		} catch ( Exception $e ) {
+			die ( $e->getMessage () );
+		}
+    }
+    public function update($objeto) {
+        try {
+            $id = $objeto->id;
+            $nombre = $objeto->nombre;
+            $descripcion = $objeto->descripcion;
+            $precio = $objeto->precio;
+
+            // Consulta SQL para UPDATE en la tabla planes
+            $vSql = "UPDATE planes SET nombre = '$nombre', descripcion = '$descripcion', precio = $precio WHERE id = $id";
+
+            // Ejecutar la consulta para actualizar el plan
+            $this->enlace->ExecuteSQL($vSql);
+
+            // Verificar si hay servicios asociados al plan y realizar la actualización en la tabla planes_servicios
+            if (is_array($objeto->servicios)) {
+                // Consulta SQL para DELETE los registros antiguos de planes_servicios asociados a este plan
+                $vSqlDelete = "DELETE FROM planes_servicios WHERE plan_id = $id";
+                $this->enlace->ExecuteSQL($vSqlDelete);
+
+                // Consulta SQL para INSERT en la tabla planes_servicios con los nuevos servicios asociados al plan
+                $vSqlServicios = "INSERT INTO planes_servicios (plan_id, servicio_id) VALUES ";
+
+                // Recorrer el array de servicios y construir los valores para la inserción
+                $values = [];
+                foreach ($objeto->servicios as $servicio_id) {
+                    $values[] = "($id, $servicio_id)";
+                }
+
+                $vSqlServicios .= implode(",", $values);
+
+                // Ejecutar la consulta para insertar los nuevos registros en planes_servicios
+                $this->enlace->ExecuteSQL($vSqlServicios);
+            }
+            
+            return $this->get($objeto->id);
+		} catch ( Exception $e ) {
+			die ( $e->getMessage () );
+		}
+    }
+    
+}
