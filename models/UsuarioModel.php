@@ -20,7 +20,21 @@ class UserModel {
         try {
             $vSql = "SELECT * FROM clientes WHERE id=$id";
             $vResultado = $this->enlace->ExecuteSQL($vSql);
-            return $vResultado[0] ?? null;
+
+            if ($vResultado==null) {
+                return null;
+            }
+
+            $vSql = "SELECT * FROM gimnasio.historial_planes where cliente_id=$id;";
+            $Planes = $this->enlace->ExecuteSQL($vSql);
+
+            $vResultado=$vResultado[0];
+            $vResultado->planes=$Planes;
+
+            return $vResultado ?? null;
+
+
+            
         } catch (Exception $e) {
             die($e->getMessage());
         }

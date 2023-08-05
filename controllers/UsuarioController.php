@@ -63,12 +63,12 @@ class Usuario {
         echo json_encode($json, http_response_code($json["status"]));
     }
 
-    public function update($id){
+    public function update(){
         $inputJSON = file_get_contents('php://input');
         $object = json_decode($inputJSON);
 
         $clienteModel = new UserModel();
-        $response = $clienteModel->update($id, $object);
+        $response = $clienteModel->update($object);
 
         if(isset($response) && !empty($response)){
             $json = array(

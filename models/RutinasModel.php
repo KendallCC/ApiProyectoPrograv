@@ -15,7 +15,7 @@ class RutinasModel
 
             //Ejecutar la consulta
             $vResultado = $this->enlace->ExecuteSQL($vSql);
-            $vResultado=$vResultado;
+            $vResultado = $vResultado;
             // Retornar el objeto
             return $vResultado;
         } catch (Exception $e) {
@@ -27,21 +27,21 @@ class RutinasModel
     {
         try {
             $Rutina = new RutinasEjerciciosModel();
-            $imagenes= new EjerciciosImagenesModel();
+            $imagenes = new EjerciciosImagenesModel();
             #
 
             //Consulta sql
             $vSql = "SELECT * FROM rutinas where id=$id;";
-            
+
             //Ejecutar la consulta
             $vResultado = $this->enlace->ExecuteSQL($vSql);
-            $vResultado=$vResultado[0];
-            $ejerciciosRutina=$Rutina->get($id);
-            
-            $ejerciciosImg=$imagenes->get($id);
-            
-            $vResultado->ejercicios=$ejerciciosRutina;
-            $vResultado->imagenes=$ejerciciosImg;
+            $vResultado = $vResultado[0];
+            $ejerciciosRutina = $Rutina->get($id);
+
+            $ejerciciosImg = $imagenes->get($id);
+
+            $vResultado->ejercicios = $ejerciciosRutina;
+            $vResultado->imagenes = $ejerciciosImg;
             // Retornar el objeto
             return $vResultado;
         } catch (Exception $e) {
@@ -61,7 +61,7 @@ class RutinasModel
 
             // Insertar los ejercicios relacionados a la rutina en la tabla rutinas_ejercicios
             foreach ($objeto->ejercicios as $Ejercicio) {
-                $sql2 = "INSERT INTO rutinas_ejercicios (rutina_id, ejercicio_id) VALUES ($idRutina, $Ejercicio->ejercicio_id)";
+                $sql2 = "INSERT INTO rutinas_ejercicios (rutina_id, ejercicio_id,repeticiones) VALUES ($idRutina, $Ejercicio->ejercicio_id,$Ejercicio->repeticiones)";
                 $this->enlace->executeSQL($sql2);
             }
 
@@ -76,7 +76,7 @@ class RutinasModel
     {
         try {
             // Consulta sql para actualizar la rutina
-            $vSql = "UPDATE rutinas SET nombre = '$objeto->nombre', descripcion = '$objeto->descripcion' WHERE rutinas.id = $objeto->id";
+            $vSql = "UPDATE rutinas SET nombre = '$objeto->nombre', tipo = '$objeto->tipo' WHERE rutinas.id = $objeto->id";
             // Ejecutar la consulta
             $vResultado = $this->enlace->executeSQL_DML($vSql);
 
@@ -86,11 +86,17 @@ class RutinasModel
                 $deleteSql = "DELETE FROM rutinas_ejercicios WHERE rutina_id = $objeto->id";
                 $this->enlace->executeSQL($deleteSql);
 
-                // Insertar los nuevos ejercicios relacionados a la rutina en la tabla rutinas_ejercicios
-                foreach ($objeto->ejercicios as $ejercicio_id) {
-                    $insertSql = "INSERT INTO rutinas_ejercicios (rutina_id, ejercicio_id) VALUES ($objeto->id, $ejercicio_id)";
-                    $this->enlace->executeSQL($insertSql);
+
+                foreach ($objeto->ejercicios as $Ejercicio) {
+                    $sql2 = "INSERT INTO rutinas_ejercicios (rutina_id, ejercicio_id,repeticiones) VALUES ($objeto->id, $Ejercicio->ejercicio_id,$Ejercicio->repeticiones)";
+                    $this->enlace->executeSQL($sql2);
                 }
+
+                // Insertar los nuevos ejercicios relacionados a la rutina en la tabla rutinas_ejercicios
+                // foreach ($objeto->ejercicios as $ejercicio_id) {
+                //     $insertSql = "INSERT INTO rutinas_ejercicios (rutina_id, ejercicio_id,repeticiones) VALUES ('$objeto->id', '$ejercicio_id-> ejercicio_id','$ejercicio_id->repeticiones')";
+                //     $this->enlace->executeSQL($insertSql);
+                // }
             }
 
             // Retornar el objeto actualizado
@@ -99,5 +105,4 @@ class RutinasModel
             die($e->getMessage());
         }
     }
-
 }
