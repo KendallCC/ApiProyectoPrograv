@@ -19,6 +19,7 @@ require_once "models/RutinaEjerciciosModel.php";
 require_once "models/EjerciciosImagenesModel.php";
 require_once "models/EjerciciosModel.php";
 require_once "models/UsuarioModel.php";
+require_once "models/ActividadesReservasModel.php";
 /***--- Agregar todos los controladores*/
 require_once "controllers/PlanesController.php";
 require_once "controllers/ActividadesGrupalesController.php";
@@ -28,6 +29,7 @@ require_once "controllers/RutinaEjerciciosController.php";
 require_once "controllers/EjercicioImagenesController.php";
 require_once "controllers/EjercicioController.php";
 require_once "controllers/UsuarioController.php";
+require_once "controllers/ActividadesReservasController.php";
 //Enrutador
 //RoutesController.php
 require_once "controllers/RoutesController.php";

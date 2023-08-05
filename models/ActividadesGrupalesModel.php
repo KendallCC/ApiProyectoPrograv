@@ -8,20 +8,44 @@ class ActividadesGrupalesModel
     }
     /*Listar */
     public function all()
-    {
-        try {
-            //Consulta sql
-            $vSql = "SELECT ag.id AS id, ag.fecha, ag.hora_inicio, ag.hora_fin, ag.cupo,  COUNT(r.cliente_id) AS Clientes_Inscritos, s.id AS servicio_id, s.nombre AS servicio_nombre, s.descripcion AS servicio_descripcion, s.tipo AS servicio_tipo, s.imagen_servicio FROM  actividades_grupales AS ag JOIN servicios AS s ON ag.servicio_id = s.id LEFT JOIN reservas AS r ON ag.id = r.actividad_grupal_id GROUP BY ag.id;";
+{
+    try {
+        // Consulta SQL para obtener actividades y clientes inscritos
+        $vSql = "SELECT ag.id AS id_actividad, r.cliente_id AS id_cliente, ag.fecha, ag.hora_inicio, ag.hora_fin, ag.cupo, s.id AS servicio_id, s.nombre AS servicio_nombre, s.descripcion AS servicio_descripcion, s.tipo AS servicio_tipo, s.imagen_servicio FROM actividades_grupales AS ag JOIN servicios AS s ON ag.servicio_id = s.id LEFT JOIN reservas AS r ON ag.id = r.actividad_grupal_id;";
 
-            //Ejecutar la consulta
-            $vResultado = $this->enlace->ExecuteSQL($vSql);
+        // Ejecutar la consulta
+        $resultados = $this->enlace->ExecuteSQL($vSql);
 
-            // Retornar el objeto
-            return $vResultado;
-        } catch (Exception $e) {
-            die($e->getMessage());
+        // Organizar la información en un arreglo
+        $actividadesConClientes = [];
+        foreach ($resultados as $actividad) {
+            if (!isset($actividadesConClientes[$actividad->id_actividad])) {
+                $actividadesConClientes[$actividad->id_actividad] = [
+                    'id' => $actividad->id_actividad,
+                    'fecha' => $actividad->fecha,
+                    'hora_inicio' => $actividad->hora_inicio,
+                    'hora_fin' => $actividad->hora_fin,
+                    'cupo' => $actividad->cupo,
+                    'servicio_id' => $actividad->servicio_id,
+                    'servicio_nombre' => $actividad->servicio_nombre,
+                    'servicio_descripcion' => $actividad->servicio_descripcion,
+                    'servicio_tipo' => $actividad->servicio_tipo,
+                    'imagen_servicio' => $actividad->imagen_servicio,
+                    'Clientes_Inscritos' => []
+                ];
+            }
+
+            if ($actividad->id_cliente) {
+                $actividadesConClientes[$actividad->id_actividad]['Clientes_Inscritos'][] = $actividad->id_cliente;
+            }
         }
+
+        // Retornar el arreglo con la información organizada
+        return array_values($actividadesConClientes);
+    } catch (Exception $e) {
+        die($e->getMessage());
     }
+}
     /*Obtener */
     public function get($id)
     {
