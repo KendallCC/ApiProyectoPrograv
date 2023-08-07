@@ -11,7 +11,7 @@ class ActividadesGrupalesModel
 {
     try {
         // Consulta SQL para obtener actividades y clientes inscritos
-        $vSql = "SELECT ag.id AS id_actividad, r.cliente_id AS id_cliente, ag.fecha, ag.hora_inicio, ag.hora_fin, ag.cupo, s.id AS servicio_id, s.nombre AS servicio_nombre, s.descripcion AS servicio_descripcion, s.tipo AS servicio_tipo, s.imagen_servicio FROM actividades_grupales AS ag JOIN servicios AS s ON ag.servicio_id = s.id LEFT JOIN reservas AS r ON ag.id = r.actividad_grupal_id;";
+        $vSql = "SELECT  ag.id AS id_actividad,  r.cliente_id AS id_cliente,  ag.fecha,  ag.hora_inicio,  ag.hora_fin,  ag.cupo,  s.id AS servicio_id,  s.nombre AS servicio_nombre,  s.descripcion AS servicio_descripcion,  s.tipo AS servicio_tipo,  s.imagen_servicio, COUNT(CASE WHEN r.estado = 'Activo' THEN r.cliente_id ELSE NULL END) AS ClientesActivos FROM actividades_grupales AS ag JOIN servicios AS s ON ag.servicio_id = s.id LEFT JOIN reservas AS r ON ag.id = r.actividad_grupal_id GROUP BY ag.id, r.cliente_id, ag.fecha, ag.hora_inicio, ag.hora_fin, ag.cupo, s.id, s.nombre, s.descripcion, s.tipo, s.imagen_servicio;";
 
         // Ejecutar la consulta
         $resultados = $this->enlace->ExecuteSQL($vSql);
@@ -31,6 +31,7 @@ class ActividadesGrupalesModel
                     'servicio_descripcion' => $actividad->servicio_descripcion,
                     'servicio_tipo' => $actividad->servicio_tipo,
                     'imagen_servicio' => $actividad->imagen_servicio,
+                    'Clientes_Activos' => $actividad->ClientesActivos,
                     'Clientes_Inscritos' => []
                 ];
             }
@@ -51,7 +52,7 @@ class ActividadesGrupalesModel
     {
         try {
             // Consulta sql
-            $vSql = "SELECT ag.id, ag.servicio_id, ag.fecha, ag.hora_inicio, ag.hora_fin, ag.cupo, COUNT(r.cliente_id) AS clientes_inscritos, s.imagen_servicio FROM actividades_grupales ag LEFT JOIN reservas r ON ag.id = r.actividad_grupal_id LEFT JOIN servicios s ON ag.servicio_id = s.id WHERE ag.id = $id;";
+            $vSql = "SELECT  ag.id,  ag.servicio_id,  ag.fecha,  ag.hora_inicio,  ag.hora_fin,  ag.cupo,  COUNT(CASE WHEN r.estado = 'Activo' THEN r.cliente_id ELSE NULL END) AS clientes_inscritos,  s.imagen_servicio FROM actividades_grupales ag LEFT JOIN reservas r ON ag.id = r.actividad_grupal_id LEFT JOIN servicios s ON ag.servicio_id = s.id WHERE ag.id = $id GROUP BY ag.id, ag.servicio_id, ag.fecha, ag.hora_inicio, ag.hora_fin, ag.cupo, s.imagen_servicio;";
             // Ejecutar la consulta
             $vResultado = $this->enlace->ExecuteSQL($vSql);
 
@@ -64,7 +65,7 @@ class ActividadesGrupalesModel
             $vResultado = $vResultado[0];
 
             // Consulta SQL para obtener los clientes inscritos
-            $vSql2 = "SELECT CONCAT(c.nombre, ' ', c.apellidos) AS nombre_completo FROM clientes c INNER JOIN reservas r ON c.id = r.cliente_id INNER JOIN actividades_grupales ag ON r.actividad_grupal_id = ag.id WHERE ag.id = $id";
+            $vSql2 = "SELECT CONCAT(c.nombre, ' ', c.apellidos) AS nombre_completo FROM clientes c INNER JOIN reservas r ON c.id = r.cliente_id INNER JOIN actividades_grupales ag ON r.actividad_grupal_id = ag.id WHERE ag.id = $id AND r.estado = 'Activo';";
             // Ejecutar la consulta
             $vResultado2 = $this->enlace->ExecuteSQL($vSql2);
 
