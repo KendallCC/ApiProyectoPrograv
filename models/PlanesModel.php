@@ -139,5 +139,76 @@ class PlanesModel
 			die ( $e->getMessage () );
 		}
     }
+
+
+
+    public Function serviciosbyidCliente($id){
+        try {
+            $sql="SELECT plan_id FROM historial_planes WHERE cliente_id = $id AND estado_Plan = 'Activo' ORDER BY fecha_vigencia DESC LIMIT 1;";
+       $vResultado= $this->enlace->ExecuteSQL($sql);
+      $id= $vResultado[0];
+      $idplan=$id-> plan_id;
+        $vSql="SELECT s.id, s.nombre, s.descripcion, s.tipo, s.imagen_servicio FROM servicios s JOIN planes_servicios ps ON s.id = ps.servicio_id WHERE ps.plan_id = $idplan;";
+        $vResultado= $this->enlace->ExecuteSQL($vSql);
+        return $vResultado;
+        } catch (Exception $e ) {
+            die ( $e->getMessage () );
+        }
+    }
+
+
+
+//Reserva del plan
+public Function HistorialPlanes(){
+    try {
+        $sql="SELECT * FROM historial_planes";
+   $vResultado= $this->enlace->ExecuteSQL($sql);
+    return $vResultado;
+    } catch (Exception $e ) {
+        die ( $e->getMessage () );
+    }
+}
+
+public Function HistorialPlanesbyid($id){
+    try {
+        $sql="SELECT * FROM historial_planes where id=$id";
+   $vResultado= $this->enlace->ExecuteSQL($sql);
+    return $vResultado;
+    } catch (Exception $e ) {
+        die ( $e->getMessage () );
+    }
+}
+
+public Function HistorialPlanesbyidCliente($id){
+    try {
+        $sql="SELECT * FROM historial_planes WHERE cliente_id=$id and estado_Plan='Activo'";
+   $vResultado= $this->enlace->ExecuteSQL($sql);
+    return $vResultado;
+    } catch (Exception $e ) {
+        die ( $e->getMessage () );
+    }
+}
+
+    public function ContratarPlan($Contratacion){
+        try {
+            $sql="INSERT INTO historial_planes (cliente_id, plan_id, fecha_vigencia, estado_Plan) VALUES ($Contratacion->cliente_id, $Contratacion->plan_id, '$Contratacion->fecha_vigencia', '$Contratacion->estado_Plan');";
+       $vResultado= $this->enlace->executeSQL_DML_last($sql);
+        return ['Contratacion realizada con exito'];
+        } catch (Exception $e ) {
+            die ( $e->getMessage () );
+        }
+        
+    }
     
+    public function ActualizarContratoPlan($objeto){
+        try {
+            $sql="UPDATE historial_planes SET estado_Plan = '$objeto->estado' WHERE plan_id = $objeto->plan_id";
+       $vResultado= $this->enlace->executeSQL_DML_last($sql);
+        return ['Contratacion realizada con exito'];
+        } catch (Exception $e ) {
+            die ( $e->getMessage () );
+        }
+        
+    }
+//termina reserva del plan
 }

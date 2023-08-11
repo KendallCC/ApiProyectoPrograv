@@ -5848,3 +5848,282 @@ Stack trace:
 [06-Aug-2023 06:16:30 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
 [06-Aug-2023 06:16:30 Europe/Berlin] PHP   4. ActividadesReservas->get($param = '26') C:\xampp\htdocs\api\routes\routes.php:50
 [06-Aug-2023 06:16:30 Europe/Berlin] PHP   5. ActividadesReservasModel->get($id = '26') C:\xampp\htdocs\api\controllers\ActividadesReservasController.php:33
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'Cuadrisep'; public $descripcion = 'Se trabajara la parte bajad el cuadrisep'; public $equipamiento = 'Mancuernas'; public $imagenes_ejercicio = [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]; public $id = '11' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:17:59 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'Cuadrisep'; public $descripcion = 'Se trabajara la parte bajad el cuadrisep'; public $equipamiento = 'Mancuernas'; public $imagenes_ejercicio = [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]; public $id = '11' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:18:46 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => class stdClass { ... }, 1 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:51:46 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 24', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'..., 1 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 24', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'..., 1 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'INSERT INTO ejercicio_imagen (imagen_ejercicio, id_ejercicio) VALUES (\'/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1A'..., $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:116
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'..., 1 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:53:29 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'INSERT INTO ejercicio_imagen (imagen_ejercicio, id_ejercicio) VALUES (\'/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1A'..., $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:116
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 24', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => '/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:56:17 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'INSERT INTO ejercicio_imagen (imagen_ejercicio, id_ejercicio) VALUES (\'/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1A'..., $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:116
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => 'iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAABTGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8kZOcW8wkwMCQm1dSFOTupBARGaXA/oiBmUGEgZOBj0E2Mbm4wDfYLYQBCIoTy4uTS4pyGFDAt2sMjCD6sm5GYl7K3IkMtg4NG2wdSnQa5y1V6mPADzhTUouTgfQHII5PLigqYWBg5AGyecpLCkBsCSBbpAjoKCBbB8ROh7AdQOwkCDsErCYkyBnIzgCyE9KR2ElIbKhdIMBaCvQsskNKUitKQLSzswEDKAwgop9DwH5jFDuJEMtfwMBg8YmBgbkfIZY0jYFheycDg8QthJgKUB1/KwPDtiPJpUVlUGu0gLiG4QfjHKZS5maWk2x+HEJcEjxJfF8Ez4t8k8iS0VNwVlmjmaVXZ/zacrP9NbdwX7OQshjxFNmcttKwut4OnUlmc1Yv79l0e9/MU8evpz4p//jz/38AR4Nk5SKet7kAAQAASURB'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 24', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => 'iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAABTGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8kZOcW8wkwMCQm1dSFOTupBARGaXA/oiBmUGEgZOBj0E2Mbm4wDfYLYQBCIoTy4uTS4pyGFDAt2sMjCD6sm5GYl7K3IkMtg4NG2wdSnQa5y1V6mPADzhTUouTgfQHII5PLigqYWBg5AGyecpLCkBsCSBbpAjoKCBbB8ROh7AdQOwkCDsErCYkyBnIzgCyE9KR2ElIbKhdIMBaCvQsskNKUitKQLSzswEDKAwgop9DwH5jFDuJEMtfwMBg8YmBgbkfIZY0jYFheycDg8QthJgKUB1/KwPDtiPJpUVlUGu0gLiG4QfjHKZS5maWk2x+HEJcEjxJfF8Ez4t8k8iS0VNwVlmjmaVXZ/zacrP9NbdwX7OQshjxFNmcttKwut4OnUlmc1Yv79l0e9/MU8evpz4p//jz/38AR4Nk5SKet7kAAQAASURB'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:56:46 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'INSERT INTO ejercicio_imagen (imagen_ejercicio, id_ejercicio) VALUES (\'iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAABTGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8kZOcW8wkwMCQm1dSFOTupBARGaXA/oiBmUGEgZOBj0E2Mbm4wDfYLYQBCIoTy4uTS4pyGFDAt2sMjCD6sm5GYl7K3IkMtg4NG2wdSnQa5y1V6mPADzhTUouTgfQHII5PLigqYWBg5AGyecpLCkBsCSBbpAjoKCBbB8ROh7AdQOwkCDsErCYkyBnIzgCyE9KR2ElIbKhdIMBaCvQsskNKUitKQLSzswEDKAwgop9DwH5jFDuJEMtfwMBg8YmBgbkfIZY0jYFheycDg8QthJgKUB1/KwPDtiPJpUVlUGu0gLiG4QfjHKZS5maWk2x+HEJcEjxJfF8Ez4t8k8iS0VNwVlmjmaVXZ/zacrP9NbdwX'..., $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:116
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => 'iVBORw0KGgoAAAANSUhEUgAAAWgAAAGWCAYAAABVfRm8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAACkNElEQVR4Xu19B4BcVdn29LK9b5JN772RQhJKgNCxUUSKYEP8FfxERVFBpSjYPtFPBSsKSu8QICQhtPRAeu+7m+29TZ/5n+fM'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 24', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => 'iVBORw0KGgoAAAANSUhEUgAAAWgAAAGWCAYAAABVfRm8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAACkNElEQVR4Xu19B4BcVdn29LK9b5JN772RQhJKgNCxUUSKYEP8FfxERVFBpSjYPtFPBSsKSu8QICQhtPRAeu+7m+29TZ/5n+fM'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 00:57:13 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'INSERT INTO ejercicio_imagen (imagen_ejercicio, id_ejercicio) VALUES (\'iVBORw0KGgoAAAANSUhEUgAAAWgAAAGWCAYAAABVfRm8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAACkNElEQVR4Xu19B4BcVdn29LK9b'..., $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:116
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => 'iVBORw0KGgoAAAANSUhEUgAAAWgAAAGWCAYAAABVfRm8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAACkNElEQVR4Xu19B4BcVdn29LK9b5JN772RQhJKgNCxUUSKYEP8FfxERVFBpSjYPtFPBSsKSu8QICQhtPRAeu+7m+29TZ/5n+fM'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'DELETE FROM ejercicio_imagen WHERE id_ejercicio = 24', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:111
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP Stack trace:
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   4. Ejercicios->update() C:\xampp\htdocs\api\routes\routes.php:64
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   5. EjercicioModel->update($objeto = class stdClass { public $nombre = 'dwdawd'; public $descripcion = 'dwadad'; public $equipamiento = 'dawdada'; public $imagenes_ejercicio = [0 => 'iVBORw0KGgoAAAANSUhEUgAAAWgAAAGWCAYAAABVfRm8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAACkNElEQVR4Xu19B4BcVdn29LK9b5JN772RQhJKgNCxUUSKYEP8FfxERVFBpSjYPtFPBSsKSu8QICQhtPRAeu+7m+29TZ/5n+fM'...]; public $id = '24' }) C:\xampp\htdocs\api\controllers\EjercicioController.php:75
+[08-Aug-2023 01:04:05 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'INSERT INTO ejercicio_imagen (imagen_ejercicio, id_ejercicio) VALUES (\'iVBORw0KGgoAAAANSUhEUgAAAWgAAAGWCAYAAABVfRm8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAACkNElEQVR4Xu19B4BcVdn29LK9b'..., $resultType = *uninitialized*) C:\xampp\htdocs\api\models\EjerciciosModel.php:116
+[10-Aug-2023 16:36:28 Europe/Berlin] PHP Warning:  Undefined variable $param in C:\xampp\htdocs\api\controllers\PlanesController.php on line 132
+[10-Aug-2023 16:36:28 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 16:36:28 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 16:36:28 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 16:36:28 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 16:36:28 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 17:29:19 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 17:30:01 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 17:33:32 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 17:33:42 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 17:35:48 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 18:02:10 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 18:02:28 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$plan_id in C:\xampp\htdocs\api\models\PlanesModel.php on line 188
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP Stack trace:
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP   4. Plan->ActualizarReservaPlan() C:\xampp\htdocs\api\routes\routes.php:54
+[10-Aug-2023 18:24:46 Europe/Berlin] PHP   5. PlanesModel->ActualizarContratoPlan($objeto = class stdClass { public $estado = 'Inactivo' }) C:\xampp\htdocs\api\controllers\PlanesController.php:158
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 151
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 151
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:28:57 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:30:23 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:30:53 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:31:50 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 152
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:34:13 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 152
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:34:21 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\PlanesModel.php on line 152
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:35:20 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$id in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 05:38:04 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP Stack trace:
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[11-Aug-2023 06:30:16 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
