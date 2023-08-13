@@ -199,5 +199,32 @@ public function planesServiciosporidCliente(){
         http_response_code($json["status"])
     );
 }
+
+public function HistorialPlanes(){
+    //Obtener el listado del Modelo
+    $inputJSON=file_get_contents('php://input');
+    $object = json_decode($inputJSON);
+    $plan = new PlanesModel();
+    $response = $plan->HistorialPlanes();
+    //Si hay respuesta
+    if (isset($response) && !empty($response)) {
+        //Armar el json
+        $json = array(
+            'status' => 200,
+            'results' => $response
+        );
+    } else {
+        $json = array(
+            'status' => 400,
+            'results' => "No hay registros"
+        );
+    }
+    echo json_encode(
+        $json,
+        http_response_code($json["status"])
+    );
+    
+}
+
 }
 

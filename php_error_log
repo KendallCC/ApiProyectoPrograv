@@ -6127,3 +6127,178 @@ Stack trace:
 [11-Aug-2023 06:30:16 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
 [11-Aug-2023 06:30:16 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
 [11-Aug-2023 06:30:16 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 51
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP Stack trace:
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP   4. Plan->get($param = '1') C:\xampp\htdocs\api\routes\routes.php:50
+[12-Aug-2023 00:08:51 Europe/Berlin] PHP   5. PlanesModel->get($id = '1') C:\xampp\htdocs\api\controllers\PlanesController.php:33
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 51
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP Stack trace:
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP   4. Plan->get($param = '1') C:\xampp\htdocs\api\routes\routes.php:50
+[12-Aug-2023 00:08:52 Europe/Berlin] PHP   5. PlanesModel->get($id = '1') C:\xampp\htdocs\api\controllers\PlanesController.php:33
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Stack trace:
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Stack trace:
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Stack trace:
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP Stack trace:
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:37
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[12-Aug-2023 00:12:11 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 10) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 51
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   4. Plan->get($param = '9') C:\xampp\htdocs\api\routes\routes.php:50
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   5. PlanesModel->get($id = '9') C:\xampp\htdocs\api\controllers\PlanesController.php:33
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 51
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   4. Plan->get($param = '9') C:\xampp\htdocs\api\routes\routes.php:50
+[13-Aug-2023 00:02:03 Europe/Berlin] PHP   5. PlanesModel->get($id = '9') C:\xampp\htdocs\api\controllers\PlanesController.php:33
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\RutinasModel.php on line 38
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   4. Rutinas->get($param = '7') C:\xampp\htdocs\api\routes\routes.php:50
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   5. RutinasModel->get($id = '7') C:\xampp\htdocs\api\controllers\RutinasController.php:33
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\RutinasModel.php on line 38
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   4. Rutinas->get($param = '7') C:\xampp\htdocs\api\routes\routes.php:50
+[13-Aug-2023 03:18:02 Europe/Berlin] PHP   5. RutinasModel->get($id = '7') C:\xampp\htdocs\api\controllers\RutinasController.php:33
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:29:43 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:29:50 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:29:53 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:30:11 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:30:29 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:30:32 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:30:33 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:30:41 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:30:51 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:31:19 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:32:10 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:32:39 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:32:48 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP Warning:  Attempt to read property "id" on int in C:\xampp\htdocs\api\models\PlanesModel.php on line 184
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP Stack trace:
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[13-Aug-2023 08:34:02 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133

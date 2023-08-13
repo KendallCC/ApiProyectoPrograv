@@ -181,7 +181,7 @@ public Function HistorialPlanesbyid($id){
 
 public Function HistorialPlanesbyidCliente($id){
     try {
-        $sql="SELECT * FROM historial_planes WHERE cliente_id=$id and estado_Plan='Activo'";
+        $sql="SELECT * FROM historial_planes WHERE cliente_id=$id and estado_Plan='Activo' ";
    $vResultado= $this->enlace->ExecuteSQL($sql);
     return $vResultado;
     } catch (Exception $e ) {
@@ -202,13 +202,13 @@ public Function HistorialPlanesbyidCliente($id){
     
     public function ActualizarContratoPlan($objeto){
         try {
-            $sql="UPDATE historial_planes SET estado_Plan = '$objeto->estado' WHERE plan_id = $objeto->plan_id";
+            $sql="UPDATE historial_planes SET estado_Plan = 'Inactivo' WHERE plan_id = $objeto->plan_id and cliente_id=$objeto->cliente_id";
        $vResultado= $this->enlace->executeSQL_DML_last($sql);
         return ['Contratacion realizada con exito'];
         } catch (Exception $e ) {
             die ( $e->getMessage () );
         }
-        
     }
+
 //termina reserva del plan
 }
