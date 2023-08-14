@@ -189,9 +189,10 @@ public Function HistorialPlanesbyidCliente($id){
     }
 }
 
+
     public function ContratarPlan($Contratacion){
         try {
-            $sql="INSERT INTO historial_planes (cliente_id, plan_id, fecha_vigencia, estado_Plan) VALUES ($Contratacion->cliente_id, $Contratacion->plan_id, '$Contratacion->fecha_vigencia', '$Contratacion->estado_Plan');";
+            $sql="INSERT INTO historial_planes (cliente_id, plan_id, fecha_vigencia, estado_Plan,monto) VALUES ($Contratacion->cliente_id, $Contratacion->plan_id, '$Contratacion->fecha_vigencia', '$Contratacion->estado_Plan','$Contratacion->precio');";
        $vResultado= $this->enlace->executeSQL_DML_last($sql);
         return ['Contratacion realizada con exito'];
         } catch (Exception $e ) {
@@ -209,6 +210,7 @@ public Function HistorialPlanesbyidCliente($id){
             die ( $e->getMessage () );
         }
     }
+
 
 //termina reserva del plan
 }

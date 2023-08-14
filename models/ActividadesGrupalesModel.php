@@ -110,4 +110,21 @@ class ActividadesGrupalesModel
             die($e->getMessage());
         }
     }
+
+
+    public function DatosTabla($objeto)
+    {
+        try {
+            //Consulta sql
+            $vSql = "SELECT ag.fecha AS fecha_actividad, s.nombre AS actividad, COUNT(r.id) AS cantidad_participantes FROM reservas r INNER JOIN actividades_grupales ag ON r.actividad_grupal_id = ag.id INNER JOIN servicios s ON ag.servicio_id = s.id WHERE ag.fecha BETWEEN '$objeto->fecha_inicio' AND '$objeto->fecha_fin'GROUP BY ag.fecha, s.nombre;";
+            //Ejecutar la consulta
+            $vResultado = $this->enlace->ExecuteSQL($vSql);
+            // Retornar el objeto actualizado
+            return $vResultado;
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+
 }

@@ -6302,3 +6302,206 @@ Stack trace:
 [13-Aug-2023 08:34:02 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
 [13-Aug-2023 08:34:02 Europe/Berlin] PHP   4. Plan->reservasCliente() C:\xampp\htdocs\api\routes\routes.php:54
 [13-Aug-2023 08:34:02 Europe/Berlin] PHP   5. PlanesModel->HistorialPlanesbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:133
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_inicial in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_final in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$ in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:18 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_inicial in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_final in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$ in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_inicial in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_final in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$ in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:13:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_inicial in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_final in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$ in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:15:20 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_inicial in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$fecha_final in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 119
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$ in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:15:22 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$Array in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:16:06 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$Array in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:16:13 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP Warning:  Undefined property: ActividadesGrupalesModel::$Array in C:\xampp\htdocs\api\models\ActividadesGrupalesModel.php on line 123
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   4. Actividades->DatosTabla() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 01:16:35 Europe/Berlin] PHP   5. ActividadesGrupalesModel->DatosTabla($objeto = class stdClass { public $fecha_inicio = '2023-08-01'; public $fecha_fin = '2023-08-10' }) C:\xampp\htdocs\api\controllers\ActividadesGrupalesController.php:101
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:07 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:08 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:32 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\api\models\PlanesModel.php on line 149
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP Warning:  Attempt to read property "plan_id" on null in C:\xampp\htdocs\api\models\PlanesModel.php on line 150
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP Stack trace:
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   4. Plan->planesServiciosporidCliente() C:\xampp\htdocs\api\routes\routes.php:54
+[14-Aug-2023 02:26:33 Europe/Berlin] PHP   5. PlanesModel->serviciosbyidCliente($id = 9) C:\xampp\htdocs\api\controllers\PlanesController.php:183

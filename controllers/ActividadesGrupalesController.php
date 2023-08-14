@@ -93,4 +93,31 @@ class Actividades
         http_response_code($json["status"]));
         
     }
+
+    public function DatosTabla(){
+        $inputJSON=file_get_contents('php://input');
+        $object = json_decode($inputJSON); 
+        $Plan=new ActividadesGrupalesModel();
+        $response=$Plan->DatosTabla($object);
+        if(isset($response) && !empty($response)){
+            $json=array(
+                'status'=>200,
+                'results'=>$response
+            );
+        }else{
+            $json=array(
+                'status'=>400,
+                'total'=>0,
+                'results'=>"No hay registros"
+            );
+        }
+        echo json_encode($json,
+        http_response_code($json["status"]));
+        
+    }
+
+
+
+
+    
 }
