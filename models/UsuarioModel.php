@@ -67,22 +67,32 @@ class UserModel {
         }
     }
 
-    public function update($id, $object){
+    public function update($object){
         try {
-            $identificacion = $object->identificacion;
+            $id = $object->id;
             $nombre = $object->nombre;
             $apellidos = $object->apellidos;
             $sexo = $object->sexo;
             $fecha_nacimiento = $object->fecha_nacimiento;
             $telefono = $object->telefono;
             $estado = $object->estado;
-            $fecha_inscripcion = $object->fecha_inscripcion;
-            $plan_id = $object->plan_id;
-            $correo_electronico = $object->correo_electronico;
-            $contraseña = $object->contraseña;
-            $rol = $object->rol;
 
-            $vSql = "UPDATE clientes SET identificacion = '$identificacion', nombre = '$nombre', apellidos = '$apellidos', sexo = '$sexo', fecha_nacimiento = '$fecha_nacimiento', telefono = '$telefono', estado = '$estado', fecha_inscripcion = '$fecha_inscripcion', plan_id = $plan_id, correo_electronico = '$correo_electronico', contraseña = '$contraseña', rol = '$rol' WHERE id = $id";
+            $vSql = "UPDATE clientes SET nombre = '$nombre', apellidos = '$apellidos', sexo = '$sexo', fecha_nacimiento = '$fecha_nacimiento', telefono = '$telefono', estado = '$estado' WHERE id = $id";
+            $this->enlace->ExecuteSQL($vSql);
+
+            return array("message" => "Cliente actualizado correctamente.");
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function updateRol($object){
+        try {
+            
+            $rol = $object->role;
+            $id = $object->id;
+
+            $vSql = "UPDATE clientes SET rol = '$rol' WHERE id = $id";
             $this->enlace->ExecuteSQL($vSql);
 
             return array("message" => "Cliente actualizado correctamente.");

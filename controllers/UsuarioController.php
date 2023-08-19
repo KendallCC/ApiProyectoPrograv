@@ -133,5 +133,27 @@ class Usuario {
             return false;
         }
     }
+
+
+    public function rol(){
+        $inputJSON = file_get_contents('php://input');
+        $object = json_decode($inputJSON);
+
+        $clienteModel = new UserModel();
+        $response = $clienteModel->updateRol($object);
+
+        if(isset($response) && !empty($response)){
+            $json = array(
+                'status' => 200,
+                'results' => $response
+            );
+        } else {
+            $json = array(
+                'status' => 400,
+                'results' => "Cliente no actualizado"
+            );
+        }
+        echo json_encode($json, http_response_code($json["status"]));
+    }
 }
 ?>

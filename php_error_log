@@ -6740,3 +6740,59 @@ Stack trace:
 [18-Aug-2023 04:36:25 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
 [18-Aug-2023 04:36:25 Europe/Berlin] PHP   4. Plan->get($param = '13') C:\xampp\htdocs\api\routes\routes.php:50
 [18-Aug-2023 04:36:25 Europe/Berlin] PHP   5. PlanesModel->get($id = '13') C:\xampp\htdocs\api\controllers\PlanesController.php:33
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP   4. Usuario->rol() C:\xampp\htdocs\api\routes\routes.php:54
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP   5. UserModel->updateRol($object = class stdClass { public $id = '11'; public $role = 'Administrador' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:143
+[19-Aug-2023 04:25:31 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET rol = \'Administrador\' WHERE id = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:101
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP   4. Usuario->rol() C:\xampp\htdocs\api\routes\routes.php:54
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP   5. UserModel->updateRol($object = class stdClass { public $id = '11'; public $role = 'Administrador' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:143
+[19-Aug-2023 04:25:51 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET rol = \'Administrador\' WHERE id = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:101
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP   4. Usuario->rol() C:\xampp\htdocs\api\routes\routes.php:54
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP   5. UserModel->updateRol($object = class stdClass { public $id = '11'; public $role = 'Administrador' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:143
+[19-Aug-2023 04:29:38 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET rol = \'Administrador\' WHERE id = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:101
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP   4. Usuario->rol() C:\xampp\htdocs\api\routes\routes.php:54
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP   5. UserModel->updateRol($object = class stdClass { public $id = '11'; public $role = 'Empleado' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:143
+[19-Aug-2023 04:30:15 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET rol = \'Empleado\' WHERE id = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:101
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP   4. Usuario->rol() C:\xampp\htdocs\api\routes\routes.php:54
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP   5. UserModel->updateRol($object = class stdClass { public $id = '6'; public $role = 'Cliente' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:143
+[19-Aug-2023 04:31:44 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET rol = \'Cliente\' WHERE id = 6', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:101
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP   4. Usuario->update() C:\xampp\htdocs\api\routes\routes.php:64
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP   5. UserModel->update($object = class stdClass { public $id = '11'; public $nombre = 'Empleado'; public $apellidos = 'Empleado'; public $sexo = 'M'; public $telefono = '22222222'; public $fecha_nacimiento = '2023-06-27'; public $estado = 'Activo' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:71
+[19-Aug-2023 04:44:06 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET nombre = \'Empleado\', apellidos = \'Empleado\', sexo = \'M\', fecha_nacimiento = \'2023-06-27\', telefono = \'22222222\', estado = \'Activo\' WHERE id = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:81
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP Warning:  Attempt to read property "num_rows" on bool in C:\xampp\htdocs\api\models\MySqlConnect.php on line 46
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP Stack trace:
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\api\index.php:0
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP   2. RoutesController->index() C:\xampp\htdocs\api\index.php:39
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP   3. include() C:\xampp\htdocs\api\controllers\RoutesController.php:4
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP   4. Usuario->update() C:\xampp\htdocs\api\routes\routes.php:64
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP   5. UserModel->update($object = class stdClass { public $id = '11'; public $nombre = 'Empleados'; public $apellidos = 'Empleado'; public $sexo = 'M'; public $telefono = '22222222'; public $fecha_nacimiento = '2023-06-27'; public $estado = 'Activo' }) C:\xampp\htdocs\api\controllers\UsuarioController.php:71
+[19-Aug-2023 04:44:48 Europe/Berlin] PHP   6. MySqlConnect->executeSQL($sql = 'UPDATE clientes SET nombre = \'Empleados\', apellidos = \'Empleado\', sexo = \'M\', fecha_nacimiento = \'2023-06-27\', telefono = \'22222222\', estado = \'Activo\' WHERE id = 11', $resultType = *uninitialized*) C:\xampp\htdocs\api\models\UsuarioModel.php:81
