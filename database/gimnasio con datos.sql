@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-08-2023 a las 21:50:23
+-- Tiempo de generación: 18-08-2023 a las 08:23:15
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -71,7 +71,10 @@ INSERT INTO `actividades_grupales` (`id`, `servicio_id`, `fecha`, `hora_inicio`,
 (35, 14, '2023-07-03', '16:30:00', '17:30:00', 26),
 (36, 14, '2023-09-09', '16:30:00', '17:30:00', 26),
 (37, 14, '2023-08-05', '18:30:00', '18:30:00', 26),
-(38, 14, '2023-08-05', '16:30:00', '17:30:00', 26);
+(38, 14, '2023-08-05', '16:30:00', '17:30:00', 26),
+(39, 10, '2023-09-08', '14:35:00', '16:30:00', 23),
+(40, 13, '2023-09-09', '10:14:00', '11:18:00', 4),
+(41, 10, '2023-09-01', '06:00:00', '07:14:00', 23);
 
 -- --------------------------------------------------------
 
@@ -209,27 +212,53 @@ CREATE TABLE `historial_planes` (
   `id` int(11) NOT NULL,
   `cliente_id` int(11) NOT NULL,
   `plan_id` int(11) NOT NULL,
-  `fecha_vigencia` date NOT NULL
+  `fecha_vigencia` date NOT NULL,
+  `estado_Plan` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',
+  `monto` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `historial_planes`
 --
 
-INSERT INTO `historial_planes` (`id`, `cliente_id`, `plan_id`, `fecha_vigencia`) VALUES
-(1, 9, 1, '2023-08-30');
+INSERT INTO `historial_planes` (`id`, `cliente_id`, `plan_id`, `fecha_vigencia`, `estado_Plan`, `monto`) VALUES
+(1, 9, 1, '2023-08-30', 'Inactivo', 7500),
+(2, 10, 2, '2023-09-10', 'Activo', 7500),
+(3, 9, 2, '2023-09-12', 'Inactivo', 7500),
+(4, 9, 4, '2023-09-12', 'Inactivo', 7500),
+(5, 9, 2, '2023-09-12', 'Inactivo', 7500),
+(6, 9, 1, '2023-09-12', 'Inactivo', 7000),
+(7, 9, 2, '2023-09-12', 'Inactivo', 10000),
+(8, 9, 2, '2023-09-12', 'Inactivo', 10000),
+(9, 9, 1, '2023-09-12', 'Inactivo', 7000),
+(10, 9, 1, '2023-09-12', 'Inactivo', 7000),
+(11, 9, 1, '2023-09-12', 'Inactivo', 9000),
+(12, 9, 4, '2023-09-12', 'Inactivo', 19500),
+(13, 9, 1, '2023-09-16', 'Activo', 9000);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `histotial_rutinas`
+-- Estructura de tabla para la tabla `historial_rutinas`
 --
 
-CREATE TABLE `histotial_rutinas` (
+CREATE TABLE `historial_rutinas` (
+  `id` int(11) NOT NULL,
   `id_rutina` int(11) NOT NULL,
   `id_cliente` int(11) NOT NULL,
-  `nombre_rutina` varchar(100) DEFAULT NULL
+  `estado` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `historial_rutinas`
+--
+
+INSERT INTO `historial_rutinas` (`id`, `id_rutina`, `id_cliente`, `estado`) VALUES
+(3, 1, 9, 'Activo'),
+(4, 2, 9, 'Activo'),
+(5, 4, 11, 'Activo'),
+(6, 4, 10, 'Activo'),
+(7, 4, 9, 'Activo');
 
 -- --------------------------------------------------------
 
@@ -242,7 +271,8 @@ CREATE TABLE `pagos` (
   `cliente_id` int(11) NOT NULL,
   `fecha_pago` date NOT NULL,
   `monto` decimal(8,2) NOT NULL,
-  `id_plan` int(11) NOT NULL
+  `id_plan` int(11) NOT NULL,
+  `estado` enum('Activo','Inactivo') DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
@@ -332,7 +362,9 @@ INSERT INTO `reservas` (`id`, `actividad_grupal_id`, `cliente_id`, `estado`) VAL
 (22, 34, 10, 'Inactivo'),
 (23, 38, 10, 'Inactivo'),
 (24, 36, 10, 'Inactivo'),
-(25, 35, 10, 'Inactivo');
+(25, 35, 10, 'Inactivo'),
+(26, 40, 9, 'Inactivo'),
+(27, 41, 9, 'Activo');
 
 -- --------------------------------------------------------
 
@@ -457,10 +489,10 @@ ALTER TABLE `historial_planes`
   ADD KEY `plan_id` (`plan_id`);
 
 --
--- Indices de la tabla `histotial_rutinas`
+-- Indices de la tabla `historial_rutinas`
 --
-ALTER TABLE `histotial_rutinas`
-  ADD PRIMARY KEY (`id_rutina`,`id_cliente`),
+ALTER TABLE `historial_rutinas`
+  ADD PRIMARY KEY (`id`),
   ADD KEY `fk_idcliente_idx` (`id_cliente`);
 
 --
@@ -521,7 +553,7 @@ ALTER TABLE `servicios`
 -- AUTO_INCREMENT de la tabla `actividades_grupales`
 --
 ALTER TABLE `actividades_grupales`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT de la tabla `clientes`
@@ -545,7 +577,13 @@ ALTER TABLE `ejercicio_imagen`
 -- AUTO_INCREMENT de la tabla `historial_planes`
 --
 ALTER TABLE `historial_planes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT de la tabla `historial_rutinas`
+--
+ALTER TABLE `historial_rutinas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `pagos`
@@ -569,7 +607,7 @@ ALTER TABLE `planes_servicios`
 -- AUTO_INCREMENT de la tabla `reservas`
 --
 ALTER TABLE `reservas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `rutinas`

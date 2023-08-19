@@ -161,7 +161,17 @@ class PlanesModel
 //Reserva del plan
 public Function HistorialPlanes(){
     try {
-        $sql="SELECT * FROM historial_planes";
+        $sql="SELECT 
+        hp.*,
+        c.id AS id_cliente,
+        c.nombre AS nombre_cliente,
+        p.nombre AS nombre_plan
+    FROM 
+        historial_planes hp
+    JOIN 
+        clientes c ON hp.cliente_id = c.id
+    JOIN 
+        planes p ON hp.plan_id = p.id;";
    $vResultado= $this->enlace->ExecuteSQL($sql);
     return $vResultado;
     } catch (Exception $e ) {
@@ -181,7 +191,7 @@ public Function HistorialPlanesbyid($id){
 
 public Function HistorialPlanesbyidCliente($id){
     try {
-        $sql="SELECT * FROM historial_planes WHERE cliente_id=$id and estado_Plan='Activo' ";
+        $sql="SELECT hp.*, p.nombre AS nombre_plan FROM historial_planes hp JOIN planes p ON hp.plan_id = p.id WHERE hp.cliente_id = $id AND hp.estado_Plan = 'Activo';";
    $vResultado= $this->enlace->ExecuteSQL($sql);
     return $vResultado;
     } catch (Exception $e ) {

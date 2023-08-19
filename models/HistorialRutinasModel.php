@@ -11,7 +11,7 @@ class HistorialRutinasModel
     {
         try {
             //Consulta sql
-            $vSql = "SELECT hr.*, r.nombre AS nombre_rutina FROM historial_rutinas hr JOIN rutinas r ON hr.id_rutina = r.id";
+            $vSql = "SELECT hr.*, r.nombre AS nombre_rutina, CONCAT(c.nombre, ' ', c.apellidos) AS nombre_cliente FROM historial_rutinas hr JOIN rutinas r ON hr.id_rutina = r.id JOIN clientes c ON hr.id_cliente = c.id;";
 
             //Ejecutar la consulta
             $vResultado = $this->enlace->ExecuteSQL($vSql);

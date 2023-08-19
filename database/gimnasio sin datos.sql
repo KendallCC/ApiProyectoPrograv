@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-08-2023 a las 21:49:49
+-- Tiempo de generación: 18-08-2023 a las 08:22:43
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -94,19 +94,22 @@ CREATE TABLE `historial_planes` (
   `id` int(11) NOT NULL,
   `cliente_id` int(11) NOT NULL,
   `plan_id` int(11) NOT NULL,
-  `fecha_vigencia` date NOT NULL
+  `fecha_vigencia` date NOT NULL,
+  `estado_Plan` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',
+  `monto` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `histotial_rutinas`
+-- Estructura de tabla para la tabla `historial_rutinas`
 --
 
-CREATE TABLE `histotial_rutinas` (
+CREATE TABLE `historial_rutinas` (
+  `id` int(11) NOT NULL,
   `id_rutina` int(11) NOT NULL,
   `id_cliente` int(11) NOT NULL,
-  `nombre_rutina` varchar(100) DEFAULT NULL
+  `estado` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
@@ -120,7 +123,8 @@ CREATE TABLE `pagos` (
   `cliente_id` int(11) NOT NULL,
   `fecha_pago` date NOT NULL,
   `monto` decimal(8,2) NOT NULL,
-  `id_plan` int(11) NOT NULL
+  `id_plan` int(11) NOT NULL,
+  `estado` enum('Activo','Inactivo') DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
@@ -239,10 +243,10 @@ ALTER TABLE `historial_planes`
   ADD KEY `plan_id` (`plan_id`);
 
 --
--- Indices de la tabla `histotial_rutinas`
+-- Indices de la tabla `historial_rutinas`
 --
-ALTER TABLE `histotial_rutinas`
-  ADD PRIMARY KEY (`id_rutina`,`id_cliente`),
+ALTER TABLE `historial_rutinas`
+  ADD PRIMARY KEY (`id`),
   ADD KEY `fk_idcliente_idx` (`id_cliente`);
 
 --
@@ -327,6 +331,12 @@ ALTER TABLE `ejercicio_imagen`
 -- AUTO_INCREMENT de la tabla `historial_planes`
 --
 ALTER TABLE `historial_planes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `historial_rutinas`
+--
+ALTER TABLE `historial_rutinas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --

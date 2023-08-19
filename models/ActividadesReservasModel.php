@@ -11,7 +11,7 @@ class ActividadesReservasModel
     {
         try {
             //Consulta sql
-            $vSql = "SELECT * FROM reservas;";
+            $vSql = "SELECT r.*, CONCAT(c.nombre, ' ', c.apellidos) AS nombre_cliente, s.nombre AS nombre_servicio FROM reservas r JOIN actividades_grupales ag ON r.actividad_grupal_id = ag.id JOIN clientes c ON r.cliente_id = c.id JOIN servicios s ON ag.servicio_id = s.id;";
 
             //Ejecutar la consulta
             $vResultado = $this->enlace->ExecuteSQL($vSql);
